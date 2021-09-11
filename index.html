@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+<form name="form">
+<input type="text" name="textview" class="textview">
+</form>
+<div class="clearfix">
+    <div class="col-3" ><input type="button" value="C" class="butoon top-butoon" onclick="clean();"></div>
+    <div class="col-3" ><input type="button" value="&#8756;" class="butoon top-butoon"></div>
+    <div class="col-3" ><input type="button" value="del" class="butoon top-butoon" onclick="back();"></div>
+    <div class="col-3" ><input type="button" value="&#247;" class="butoon operator"onclick="insert('/');"></div>  <!--division--> 
+</div>
+<div class="clearfix">
+    <div class="col-3" ><input type="button" value="7" class="butoon" onclick="insert(7);"></div>
+    <div class="col-3" ><input type="button" value="8" class="butoon"onclick="insert(8);"></div>
+    <div class="col-3" ><input type="button" value="9" class="butoon"onclick="insert(9);"></div>
+    <div class="col-3" ><input type="button" value="&#215;" class="butoon operator"onclick="insert('*');"></div> <!-- multi-->
+</div>
+<div class="clearfix">
+    <div class="col-3" ><input type="button" value="4" class="butoon"onclick="insert(4);"></div>
+    <div class="col-3" ><input type="button" value="5" class="butoon"onclick="insert(5);"></div>
+    <div class="col-3" ><input type="button" value="6" class="butoon"onclick="insert(6);"></div>
+    <div class="col-3" ><input type="button" value="&#8722;" class="butoon operator"onclick="insert('-');"></div> <!-- sub-->
+</div>
+<div class="clearfix">
+    <div class="col-3" ><input type="button" value="1" class="butoon"onclick="insert(1);"></div>
+    <div class="col-3" ><input type="button" value="2" class="butoon"onclick="insert(2);"></div>
+    <div class="col-3" ><input type="button" value="3" class="butoon"onclick="insert(3);"></div>
+    <div class="col-3" ><input type="button" value="&#43;" class="butoon operator"onclick="insert('+');"></div> <!-- add<-->
+</div>
+<div class="clearfix">
+    <div class="col-3" ><input type="button" value="." class="butoon"onclick="insert('.');"></div>
+    <div class="col-3" ><input type="button" value="0" class="butoon"onclick="insert(0);"></div>
+    <div class="col-6" ><input type="button" value="&#61;" class="butoon equal " onclick="equal();"></div>  <!--equal-->
+   
+</div>
+    </div>
+    <script src="maic.js"></script>
+</body>
+</html>

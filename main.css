@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+body {
+    background: #333;
+}
+.main {
+    background: #ccc;
+    width:400px;
+    text-align: center;
+    margin: 80px auto;
+    padding: 30px;
+}
+form {
+    padding: 0 5px;
+    margin-bottom: 15px;
+}
+.textview{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    pointer-events: none;
+}
+.clearfix:before, .clearfix:after{
+    content: '';
+    display: table;
+    clear :both;
+    width: 100%;
+}
+.col-3 {
+    width: 25%;
+    padding: 5px;
+    float:left;
+}
+.col-6 {
+    width: 50%;
+    padding: 5px;
+    float:left;
+}
+.butoon {
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+.butoon.top-butoon {
+background: #6d4b7e;
+border-color: #d6d6d6;
+color: #fff;
+}
+.butoon.equal {
+    background: #ad3535;
+    color: #ffff;
+    font-size: 22px;
+} 
+.butoon.operator {
+    background: #20b2aa;
+    border-color: #d6d6d6;
+    counter-reset: #fff;
+    font-size: 20px;
+}
